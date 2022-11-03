@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: rgb(9, 2, 67);
+	font-family: Poppins, sans-serif;
+}
+
+.container {
+	background: #fff;
+	width: 80vw;
+	max-width: 37.5em;
+	padding: 3em 2.5em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 10px;
+	box-shadow: 0 1.25em 1.8em rgba(239, 239, 239, 0.25);
+}
+
+.search-wrapper {
+	display: grid;
+	grid-template-columns: 9fr 3fr;
+	gap: 1.25em;
+}
+.search-wrapper button {
+	font-size: 1em;
+	background: rgb(0, 0, 112);
+	color: #fff;
+	padding: 0.8em 1.7em;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0 1.25em 1.8em rgba(9, 0, 112, 0.25);
+}
+.search-wrapper input {
+	font-size: 1em;
+	padding: 0 0.62em;
+	border: none;
+	border-bottom: 2px solid rgb(9, 2, 67);
+	outline: none;
+	color: rgb(9, 2, 67);
+}
+#result {
+	margin-top: 1.2em;
+}
+#result .flag-img {
+	display: block;
+	width: 45%;
+	min-width: 9.5em;
+	margin: 1.8em auto 1.2em auto;
+	box-shadow: 0 1.25em 1.8em rgba(9, 0, 112, 0.25);
+	border-radius: 3px;
+}
+.container h2 {
+	text-align: center;
+	color: rgb(0, 0, 56);
+	text-shadow: 2px 2px 5px rgba(0, 0, 102, 0.4);
+	text-transform: capitalize;
+	letter-spacing: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+.data-wrapper {
+	margin-bottom: 1.8em;
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	font-style: italic;
+}
+.data-wrapper h4 {
+	font-size: 1.2em;
+
+	text-shadow: 2px 2px 5px rgba(0, 0, 102, 0.4);
+}
+.data-wrapper span {
+	margin-left: 1em;
+	font-size: 0.9em;
+}
+.container h3 {
+	color: rgb(136, 0, 0);
+	font-weight: 600;
+	font-style: oblique;
+	text-shadow: 2px 2px 5px rgba(0, 0, 102, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+	.search-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.container h3 {
+		color: rgb(136, 0, 0);
+		font-weight: 600;
+		font-style: oblique;
+		text-shadow: 2px 2px 5px rgba(0, 0, 102, 0.4);
+	}
+	.data-wrapper h4 {
+		font-size: 0.9em;
+
+		text-shadow: 2px 2px 5px rgba(0, 0, 102, 0.4);
+	}
+}

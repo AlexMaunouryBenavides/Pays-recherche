@@ -6,7 +6,7 @@ let input = document.getElementById("country-input");
 
 searchBtn.addEventListener("click", () => {
 	let countryName = input.value;
-	let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+	let finalURL = `http://restcountries.com/v3.1/name/${countryName}?fullText=true`;
 	console.log(finalURL);
 	fetch(finalURL)
 		.then((res) => res.json())
